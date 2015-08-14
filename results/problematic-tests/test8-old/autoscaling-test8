@@ -1,0 +1,1082 @@
+java version "1.8.0_40"
+Java(TM) SE Runtime Environment (build 1.8.0_40-b26)
+Java HotSpot(TM) 64-Bit Server VM (build 25.40-b25, mixed mode)
+/export/apps/jdk/JDK-1_8_0_40/bin/java -Dlog4j.configuration=file:deploy/samza/bin/log4j-console.xml -Dsamza.log.dir=/export/home/eng/snoghabi/deploy/samza -Djava.io.tmpdir=/export/home/eng/snoghabi/deploy/samza/tmp -Xmx768M -XX:+PrintGCDateStamps -Xloggc:/export/home/eng/snoghabi/deploy/samza/gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=10241024 -d64 -cp /export/home/eng/snoghabi/.samza/conf:/export/home/eng/snoghabi/deploy/samza/lib/activation-1.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/akka-actor_2.10-2.1.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/aopalliance-1.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/asm-3.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/avro-1.7.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-beanutils-1.7.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-beanutils-core-1.8.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-cli-1.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-codec-1.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-collections-3.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-compress-1.4.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-configuration-1.6.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-daemon-1.0.13.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-digester-1.8.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-el-1.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-httpclient-3.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-io-2.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-lang-2.6.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-logging-1.1.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-math3-3.1.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/commons-net-3.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/config-1.0.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/grizzled-slf4j_2.10-1.0.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/gson-1.7.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/guava-11.0.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/guice-3.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/guice-servlet-3.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-annotations-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-auth-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-common-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-hdfs-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-yarn-api-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-yarn-client-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hadoop-yarn-common-2.4.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/hello-samza-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/httpclient-4.4.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/httpcore-4.4.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/irclib-1.10.jar:/export/home/eng/snoghabi/deploy/samza/lib/jackson-core-asl-1.8.5.jar:/export/home/eng/snoghabi/deploy/samza/lib/jackson-jaxrs-1.8.5.jar:/export/home/eng/snoghabi/deploy/samza/lib/jackson-mapper-asl-1.8.5.jar:/export/home/eng/snoghabi/deploy/samza/lib/jackson-xc-1.8.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/jasper-compiler-5.5.23.jar:/export/home/eng/snoghabi/deploy/samza/lib/jasper-runtime-5.5.23.jar:/export/home/eng/snoghabi/deploy/samza/lib/javax.inject-1.jar:/export/home/eng/snoghabi/deploy/samza/lib/java-xmlbuilder-0.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/javax.servlet-3.0.0.v201112011016.jar:/export/home/eng/snoghabi/deploy/samza/lib/jaxb-api-2.2.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/jaxb-impl-2.2.3-1.jar:/export/home/eng/snoghabi/deploy/samza/lib/jersey-client-1.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/jersey-core-1.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/jersey-guice-1.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/jersey-json-1.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/jersey-server-1.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/jets3t-0.9.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/jettison-1.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-6.1.26.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-continuation-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-http-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-io-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-security-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-server-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-servlet-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-util-6.1.26.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-util-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-webapp-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jetty-xml-8.1.8.v20121106.jar:/export/home/eng/snoghabi/deploy/samza/lib/jline-0.9.94.jar:/export/home/eng/snoghabi/deploy/samza/lib/joda-convert-1.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/joda-time-2.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/jopt-simple-3.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/jsch-0.1.42.jar:/export/home/eng/snoghabi/deploy/samza/lib/jsp-api-2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/jsr305-1.3.9.jar:/export/home/eng/snoghabi/deploy/samza/lib/junit-3.8.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/juniversalchardet-1.0.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/kafka_2.10-0.8.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/kafka-clients-0.8.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/log4j-1.2.16.jar:/export/home/eng/snoghabi/deploy/samza/lib/lz4-1.2.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/metrics-core-2.2.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/mime-util-2.1.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/netty-3.7.0.Final.jar:/export/home/eng/snoghabi/deploy/samza/lib/paranamer-2.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/protobuf-java-2.5.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/rl_2.10-0.4.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/rocksdbjni-3.10.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-api-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-core_2.10-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-kafka_2.10-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-kv_2.10-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-kv-rocksdb_2.10-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-log4j-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/samza-yarn_2.10-0.10.0-SNAPSHOT.jar:/export/home/eng/snoghabi/deploy/samza/lib/scala-compiler-2.10.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/scala-library-2.10.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/scala-reflect-2.10.4.jar:/export/home/eng/snoghabi/deploy/samza/lib/scalate-core_2.10-1.6.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/scalate-util_2.10-1.6.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/scalatra_2.10-2.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/scalatra-common_2.10-2.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/scalatra-scalate_2.10-2.2.1.jar:/export/home/eng/snoghabi/deploy/samza/lib/servlet-api-2.5.jar:/export/home/eng/snoghabi/deploy/samza/lib/slf4j-api-1.6.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/slf4j-log4j12-1.6.2.jar:/export/home/eng/snoghabi/deploy/samza/lib/snappy-java-1.1.1.6.jar:/export/home/eng/snoghabi/deploy/samza/lib/stax-api-1.0-2.jar:/export/home/eng/snoghabi/deploy/samza/lib/xmlenc-0.52.jar:/export/home/eng/snoghabi/deploy/samza/lib/xz-1.0.jar:/export/home/eng/snoghabi/deploy/samza/lib/zkclient-0.3.jar:/export/home/eng/snoghabi/deploy/samza/lib/zookeeper-3.3.4.jar org.apache.samza.autoScaling.AutoScalingSystem --config-factory=org.apache.samza.config.factories.PropertiesConfigFactory --config-path=file:/export/home/eng/snoghabi/res/test8/mem-test.properties --autoscaling-config-path=file:/export/home/eng/snoghabi/res/test8/autoscaling.properties
+2015-08-04 05:28:28 StatCollector [INFO] creating stat collector with directory: ./res/test7/stats/
+2015-08-04 05:28:28 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property auto.offset.reset is overridden to largest
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property client.id is overridden to samza_admin-shadi_mem_test_8-1-1438666108474-0
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property group.id is overridden to undefined-samza-consumer-group-8b3f5350-bd91-44d4-9cdb-b252755a11fd
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property zookeeper.connect is overridden to zk-lca1-kafka.corp.linkedin.com:12913/kafka-queuing
+2015-08-04 05:28:28 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property auto.offset.reset is overridden to largest
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property client.id is overridden to samza_consumer-shadi_mem_test_8-1-1438666108590-1
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property group.id is overridden to undefined-samza-consumer-group-bca04346-f311-4a69-8e5f-3af277ad3f52
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property zookeeper.connect is overridden to zk-lca1-kafka.corp.linkedin.com:12913/kafka-queuing
+2015-08-04 05:28:28 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property client.id is overridden to samza_admin-shadi_mem_test_8-1-1438666108474-0
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property metadata.broker.list is overridden to lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property request.timeout.ms is overridden to 30000
+2015-08-04 05:28:28 ClientUtils$ [INFO] Fetching metadata from broker id:0,host:lca1-kafka-kafka-queuing-vip.corp.linkedin.com,port:10251 with correlation id 0 for 1 topic(s) Set(__autoscaling_metrics_shadi-mem-test-8)
+2015-08-04 05:28:28 SyncProducer [INFO] Connected to lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251 for producing
+2015-08-04 05:28:28 SyncProducer [INFO] Disconnecting from lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251
+2015-08-04 05:28:28 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:28 AutoScalingMetricsSystemConsumer [INFO] num partitions in the stream: 8
+2015-08-04 05:28:28 MemoryAnalyzer [INFO] Trigger point: 0.8 container scale-up point: 0.7 check-window size: 5 sliding window size: 10 percentage above threshold trigger: 0.8
+2015-08-04 05:28:28 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property auto.offset.reset is overridden to largest
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property client.id is overridden to samza_admin-shadi_mem_test_8-1-1438666108994-2
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property group.id is overridden to undefined-samza-consumer-group-8a319bfe-f72b-4233-822d-753191dabbc6
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property zookeeper.connect is overridden to zk-lca1-kafka.corp.linkedin.com:12913/kafka-queuing
+2015-08-04 05:28:28 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property auto.offset.reset is overridden to largest
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property client.id is overridden to samza_consumer-shadi_mem_test_8-1-1438666108996-3
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property group.id is overridden to undefined-samza-consumer-group-4dfac949-a712-4bdb-a87f-dd33e5166ca5
+2015-08-04 05:28:28 VerifiableProperties [INFO] Property zookeeper.connect is overridden to zk-lca1-kafka.corp.linkedin.com:12913/kafka-queuing
+2015-08-04 05:28:29 ConfigManager [INFO] setting rm server to : http://lca1-app0549.corp.linkedin.com:8088
+2015-08-04 05:28:29 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property client.id is overridden to samza_admin-shadi_mem_test_8-1-1438666108994-2
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property metadata.broker.list is overridden to lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property request.timeout.ms is overridden to 30000
+2015-08-04 05:28:29 ClientUtils$ [INFO] Fetching metadata from broker id:0,host:lca1-kafka-kafka-queuing-vip.corp.linkedin.com,port:10251 with correlation id 0 for 1 topic(s) Set(__samza_coordinator_shadi-mem-test-8_1)
+2015-08-04 05:28:29 SyncProducer [INFO] Connected to lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251 for producing
+2015-08-04 05:28:29 SyncProducer [INFO] Disconnecting from lca1-kafka-kafka-queuing-vip.corp.linkedin.com:10251
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__samza_coordinator_shadi-mem-test-8_1 -> SystemStreamMetadata [streamName=__samza_coordinator_shadi-mem-test-8_1, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=144, upcomingOffset=145]}])
+2015-08-04 05:28:29 CoordinatorStreamSystemConsumer [INFO] Starting coordinator stream system consumer.
+2015-08-04 05:28:29 KafkaSystemConsumer [INFO] Refreshing brokers for: Map([__samza_coordinator_shadi-mem-test-8_1,0] -> 0)
+2015-08-04 05:28:29 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0887.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:29 GetOffset [INFO] Validating offset 0 for topic and partition [__samza_coordinator_shadi-mem-test-8_1,0]
+2015-08-04 05:28:29 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__samza_coordinator_shadi-mem-test-8_1,0]. Using it to instantiate consumer.
+2015-08-04 05:28:29 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0887.corp.linkedin.com:10251
+2015-08-04 05:28:29 RMProxy [INFO] Connecting to ResourceManager at lca1-app0549.corp.linkedin.com/10.252.226.146:8032
+2015-08-04 05:28:29 NativeCodeLoader [WARN] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-08-04 05:28:29 ConfigManager [INFO] server URL being set to http://10.252.204.144:55986/
+2015-08-04 05:28:29 ConfigManager [INFO] config manager bootstrapped
+2015-08-04 05:28:29 VerifiableProperties [INFO] Verifying properties
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property auto.offset.reset is overridden to largest
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property client.id is overridden to samza_admin-shadi_mem_test_8-1-1438666109477-4
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property group.id is overridden to undefined-samza-consumer-group-fdf670f4-406a-4319-ad3b-69a6643c5351
+2015-08-04 05:28:29 VerifiableProperties [INFO] Property zookeeper.connect is overridden to zk-lca1-kafka.corp.linkedin.com:12913/kafka-queuing
+2015-08-04 05:28:29 CoordinatorStreamSystemProducer [INFO] Starting coordinator stream producer.
+2015-08-04 05:28:29 CoordinatorStreamWriter [INFO] Started coordinator stream writer.
+2015-08-04 05:28:29 Optimizer [INFO] remove percentage for memory: 0.3 max allocatable capacity: 1.0
+2015-08-04 05:28:29 AutoScalingSystem [INFO] Auto scaling mode: MEMORY , max num containers: 20
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 0] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 1] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 2] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 3] with offset 792
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 4] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 5] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 6] with offset 0
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 KafkaSystemAdmin$ [INFO] Got metadata: Map(__autoscaling_metrics_shadi-mem-test-8 -> SystemStreamMetadata [streamName=__autoscaling_metrics_shadi-mem-test-8, partitionMetadata={Partition [partition=0]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=5]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=1]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=6]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=2]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=7]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0], Partition [partition=3]=SystemStreamPartitionMetadata [oldestOffset=0, newestOffset=791, upcomingOffset=792], Partition [partition=4]=SystemStreamPartitionMetadata [oldestOffset=null, newestOffset=null, upcomingOffset=0]}])
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Registering SystemStreamPartition [kafka, __autoscaling_metrics_shadi-mem-test-8, 7] with offset 0
+2015-08-04 05:28:29 AutoScalingMetricsSystemConsumer [INFO] Starting auto-scaling metrics stream system consumer.
+2015-08-04 05:28:29 KafkaSystemConsumer [INFO] Refreshing brokers for: Map([__autoscaling_metrics_shadi-mem-test-8,4] -> 0, [__autoscaling_metrics_shadi-mem-test-8,5] -> 0, [__autoscaling_metrics_shadi-mem-test-8,0] -> 0, [__autoscaling_metrics_shadi-mem-test-8,2] -> 0, [__autoscaling_metrics_shadi-mem-test-8,6] -> 0, [__autoscaling_metrics_shadi-mem-test-8,7] -> 0, [__autoscaling_metrics_shadi-mem-test-8,3] -> 792, [__autoscaling_metrics_shadi-mem-test-8,1] -> 0)
+2015-08-04 05:28:29 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0919.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:29 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,4]
+2015-08-04 05:28:29 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,4]. Using it to instantiate consumer.
+2015-08-04 05:28:29 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0919.corp.linkedin.com:10251
+2015-08-04 05:28:29 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0920.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:29 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,5]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,5]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0920.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0901.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,0]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,0]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0901.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0913.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,2]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,2]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0913.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0780.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,6]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,6]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0780.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0802.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,7]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,7]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0802.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0914.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 792 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,3]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 792 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,3]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0914.corp.linkedin.com:10251
+2015-08-04 05:28:30 BrokerProxy [INFO] Creating new SimpleConsumer for host lca1-app0907.corp.linkedin.com:10251 for system kafka
+2015-08-04 05:28:30 GetOffset [INFO] Validating offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,1]
+2015-08-04 05:28:30 GetOffset [INFO] Able to successfully read from offset 0 for topic and partition [__autoscaling_metrics_shadi-mem-test-8,1]. Using it to instantiate consumer.
+2015-08-04 05:28:30 BrokerProxy [INFO] Starting BrokerProxy for lca1-app0907.corp.linkedin.com:10251
+2015-08-04 05:28:40 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 36.398575 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.49521  ] 
+
+2015-08-04 05:28:50 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 54.64573 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.5383  ] 
+
+2015-08-04 05:29:00 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 34.09926 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.546837  ] 
+
+2015-08-04 05:29:10 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.45642 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.56221  ] 
+
+2015-08-04 05:29:20 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 34.087692 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.60753  ] 
+
+2015-08-04 05:29:30 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.0636 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.63051  ] 
+
+2015-08-04 05:29:40 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 35.310158 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.631607  ] 
+
+2015-08-04 05:29:50 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 53.403427 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.64785  ] 
+
+2015-08-04 05:30:00 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 37.75759 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.658188  ] 
+
+2015-08-04 05:30:10 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 56.21598 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.68981  ] 
+
+2015-08-04 05:30:20 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 41.68612 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.704422  ] 
+
+2015-08-04 05:30:30 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 28.876633 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.620018  ] 
+
+2015-08-04 05:30:40 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 47.138603 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.620018  ] 
+
+2015-08-04 05:30:50 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 35.55179 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.62269  ] 
+
+2015-08-04 05:31:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 53.889923 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.62269  ] 
+
+2015-08-04 05:31:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 43.844696 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.642563  ] 
+
+2015-08-04 05:31:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 34.91588 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.654785  ] 
+
+2015-08-04 05:31:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 53.195564 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.658844  ] 
+
+2015-08-04 05:31:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 45.168045 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.658844  ] 
+
+2015-08-04 05:31:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 38.12706 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.674957  ] 
+
+2015-08-04 05:32:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 56.342308 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.680145  ] 
+
+2015-08-04 05:32:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 50.217117 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.693184  ] 
+
+2015-08-04 05:32:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 45.035225 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.694588  ] 
+
+2015-08-04 05:32:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 41.007065 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.703247  ] 
+
+2015-08-04 05:32:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 37.501694 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.705338  ] 
+
+2015-08-04 05:32:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 55.81858 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.706345  ] 
+
+2015-08-04 05:33:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 53.534782 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.80105  ] 
+
+2015-08-04 05:33:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.456352 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.811417  ] 
+
+2015-08-04 05:33:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.27253 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.854134  ] 
+
+2015-08-04 05:33:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.276085 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.87889  ] 
+
+2015-08-04 05:33:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.927322 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.86827  ] 
+
+2015-08-04 05:33:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 54.26967 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.896667  ] 
+
+2015-08-04 05:34:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 55.93625 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.898773  ] 
+
+2015-08-04 05:34:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 42.179924 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.88907  ] 
+
+2015-08-04 05:34:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 45.41253 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.88707  ] 
+
+2015-08-04 05:34:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 48.906822 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.887558  ] 
+
+2015-08-04 05:34:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.819313 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.891678  ] 
+
+2015-08-04 05:34:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 43.907806 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.895576  ] 
+
+2015-08-04 05:35:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 49.473564 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.90264  ] 
+
+2015-08-04 05:35:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 55.371017 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.90264  ] 
+
+2015-08-04 05:35:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 50.472458 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.91047  ] 
+
+2015-08-04 05:35:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 47.396233 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.912506  ] 
+
+2015-08-04 05:35:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 55.74225 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.923615  ] 
+
+2015-08-04 05:35:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 55.031128 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.92605  ] 
+
+2015-08-04 05:36:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 54.458214 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.950188  ] 
+
+2015-08-04 05:36:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 53.81285 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.95159  ] 
+
+2015-08-04 05:36:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.991707 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.95188  ] 
+
+2015-08-04 05:36:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.400734 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.211  ] 
+
+2015-08-04 05:36:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 51.703438 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.21717  ] 
+
+2015-08-04 05:36:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 60.498108 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.528275  ] 
+
+2015-08-04 05:37:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 59.87326 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.54287  ] 
+
+2015-08-04 05:37:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 59.148422 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.566574  ] 
+
+2015-08-04 05:37:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 58.608818 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.565414  ] 
+
+2015-08-04 05:37:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 57.773346 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.569733  ] 
+
+2015-08-04 05:37:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 57.134872 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.56852  ] 
+
+2015-08-04 05:37:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 56.35884 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.56852  ] 
+
+2015-08-04 05:38:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 65.24491 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.56846  ] 
+
+2015-08-04 05:38:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 64.66343 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.559334  ] 
+
+2015-08-04 05:38:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 64.11516 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.572723  ] 
+
+2015-08-04 05:38:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 63.505142 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.576363  ] 
+
+2015-08-04 05:38:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 62.94345 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.578804  ] 
+
+2015-08-04 05:38:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 62.156967 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.58008  ] 
+
+2015-08-04 05:39:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 61.55606 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.765137  ] 
+
+2015-08-04 05:39:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 60.635315 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.783043  ] 
+
+2015-08-04 05:39:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 69.72361 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.78244  ] 
+
+2015-08-04 05:39:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 68.89242 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.78244  ] 
+
+2015-08-04 05:39:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 68.04336 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.78311  ] 
+
+2015-08-04 05:39:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 67.40959 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.789703  ] 
+
+2015-08-04 05:40:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 66.72837 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.791107  ] 
+
+2015-08-04 05:40:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 65.89923 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.74009  ] 
+
+2015-08-04 05:40:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 65.25553 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.75785  ] 
+
+2015-08-04 05:40:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 74.21079 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.763954  ] 
+
+2015-08-04 05:40:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 73.461815 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.764633  ] 
+
+2015-08-04 05:40:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 77.14059 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.32312  ] 
+
+2015-08-04 05:41:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 90.97197 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.414352  ] 
+
+2015-08-04 05:41:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 109.81567 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.43126  ] 
+
+2015-08-04 05:41:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 109.3035 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.54146  ] 
+
+2015-08-04 05:41:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 125.355965 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.54606  ] 
+
+2015-08-04 05:41:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 129.54517 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.64393  ] 
+
+2015-08-04 05:41:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 144.15149 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.68168  ] 
+
+2015-08-04 05:42:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 157.60309 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.677307  ] 
+
+2015-08-04 05:42:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 170.30148 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.677307  ] 
+
+2015-08-04 05:42:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 172.21149 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.591156  ] 
+
+2015-08-04 05:42:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 188.12408 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.5989  ] 
+
+2015-08-04 05:42:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 204.8685 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.630905  ] 
+
+2015-08-04 05:42:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 200.02026 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.63423  ] 
+
+2015-08-04 05:43:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 216.30641 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.63784  ] 
+
+2015-08-04 05:43:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 229.54443 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.663254  ] 
+
+2015-08-04 05:43:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 233.13919 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.609573  ] 
+
+2015-08-04 05:43:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 244.65169 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.624542  ] 
+
+2015-08-04 05:43:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 250.59622 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.652977  ] 
+
+2015-08-04 05:43:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 268.65796 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.65  ] 
+
+2015-08-04 05:44:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 279.39355 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.63774  ] 
+
+2015-08-04 05:44:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 295.95972 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.551094  ] 
+
+2015-08-04 05:44:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 305.16443 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.53846  ] 
+
+2015-08-04 05:44:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 319.0856 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.46572  ] 
+
+2015-08-04 05:44:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 309.57108 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.43313  ] 
+
+2015-08-04 05:44:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 329.20544 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.35189  ] 
+
+2015-08-04 05:45:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 345.88943 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.35189  ] 
+
+2015-08-04 05:45:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 349.1912 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.35189  ] 
+
+2015-08-04 05:45:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 351.41068 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.302185  ] 
+
+2015-08-04 05:45:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 374.7229 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.302185  ] 
+
+2015-08-04 05:45:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 388.69907 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.286133  ] 
+
+2015-08-04 05:45:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 383.75937 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.95459  ] 
+
+2015-08-04 05:46:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 395.48898 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.956726  ] 
+
+2015-08-04 05:46:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 420.84952 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.96118  ] 
+
+2015-08-04 05:46:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 432.31912 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.96692  ] 
+
+2015-08-04 05:46:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 438.52835 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.96759  ] 
+
+2015-08-04 05:46:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 449.66736 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.9682  ] 
+
+2015-08-04 05:46:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 457.71124 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.994522  ] 
+
+2015-08-04 05:47:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 455.00403 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.994522  ] 
+
+2015-08-04 05:47:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 472.305 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.994522  ] 
+
+2015-08-04 05:47:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 484.08185 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.00865  ] 
+
+2015-08-04 05:47:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 486.83493 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.011917  ] 
+
+2015-08-04 05:47:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 494.4952 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.01271  ] 
+
+2015-08-04 05:47:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 510.57382 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.024857  ] 
+
+2015-08-04 05:48:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 521.3801 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.026627  ] 
+
+2015-08-04 05:48:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 528.1526 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.04792  ] 
+
+2015-08-04 05:48:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 549.82825 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.060753  ] 
+
+2015-08-04 05:48:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 419.98782 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.037033  ] 
+
+2015-08-04 05:48:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 438.85083 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.113144  ] 
+
+2015-08-04 05:48:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 437.18655 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.123276  ] 
+
+2015-08-04 05:49:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 445.4572 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.133316  ] 
+
+2015-08-04 05:49:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 457.24622 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.14235  ] 
+
+2015-08-04 05:49:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 457.35995 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.222404  ] 
+
+2015-08-04 05:49:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 476.08344 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.22387  ] 
+
+2015-08-04 05:49:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 489.06354 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.224724  ] 
+
+2015-08-04 05:49:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 497.29242 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.224724  ] 
+
+2015-08-04 05:50:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 484.68933 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.225273  ] 
+
+2015-08-04 05:50:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 496.78293 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.22619  ] 
+
+2015-08-04 05:50:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 510.11325 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.236137  ] 
+
+2015-08-04 05:50:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 508.64093 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.236137  ] 
+
+2015-08-04 05:50:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 535.1602 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.264946  ] 
+
+2015-08-04 05:50:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 520.00946 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.27558  ] 
+
+2015-08-04 05:51:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 544.1925 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.27558  ] 
+
+2015-08-04 05:51:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 564.26215 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.285088  ] 
+
+2015-08-04 05:51:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 574.7935 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.285088  ] 
+
+2015-08-04 05:51:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 586.0234 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.285088  ] 
+
+2015-08-04 05:51:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 596.511 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.313713  ] 
+
+2015-08-04 05:51:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 567.6603 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.31469  ] 
+
+2015-08-04 06:11:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 16.725037 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 27.659988  ] 
+
+2015-08-04 06:11:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 38.47966 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.2221  ] 
+
+2015-08-04 06:11:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 52.022934 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.7343  ] 
+
+2015-08-04 06:11:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 70.039085 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.30149  ] 
+
+2015-08-04 06:11:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 80.792725 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.249718  ] 
+
+2015-08-04 06:12:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 82.78779 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.102493  ] 
+
+2015-08-04 06:12:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 68.83651 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.4393  ] 
+
+2015-08-04 06:12:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 79.77303 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.59677  ] 
+
+2015-08-04 06:12:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 102.14357 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.683395  ] 
+
+2015-08-04 06:12:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 108.803024 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.830566  ] 
+
+2015-08-04 06:12:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 113.04809 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.765617  ] 
+
+2015-08-04 06:13:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 142.02344 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.88286  ] 
+
+2015-08-04 06:13:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 133.3656 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.023567  ] 
+
+2015-08-04 06:13:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 146.30746 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.044365  ] 
+
+2015-08-04 06:13:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 162.29474 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.185776  ] 
+
+2015-08-04 06:13:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 170.10162 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.2379  ] 
+
+2015-08-04 06:13:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 179.4573 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.37201  ] 
+
+2015-08-04 06:14:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 194.6236 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.45977  ] 
+
+2015-08-04 06:14:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 202.92221 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.47048  ] 
+
+2015-08-04 06:14:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 219.2066 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.426857  ] 
+
+2015-08-04 06:14:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 213.19414 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.422188  ] 
+
+2015-08-04 06:14:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 240.85358 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.447433  ] 
+
+2015-08-04 06:14:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 244.55115 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.492188  ] 
+
+2015-08-04 06:15:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 257.889 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.541748  ] 
+
+2015-08-04 06:15:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 261.03918 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.545364  ] 
+
+2015-08-04 06:15:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 270.34164 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.539726  ] 
+
+2015-08-04 06:15:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 288.9804 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.510185  ] 
+
+2015-08-04 06:15:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 290.4335 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.510056  ] 
+
+2015-08-04 06:15:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 297.0636 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.332138  ] 
+
+2015-08-04 06:16:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 309.93817 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.31552  ] 
+
+2015-08-04 06:16:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 318.75073 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.321106  ] 
+
+2015-08-04 06:16:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 340.44025 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.34951  ] 
+
+2015-08-04 06:16:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 341.01953 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.37947  ] 
+
+2015-08-04 06:16:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 359.66132 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.39441  ] 
+
+2015-08-04 06:16:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 354.2327 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.40387  ] 
+
+2015-08-04 06:17:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 379.1719 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.411736  ] 
+
+2015-08-04 06:17:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 388.1966 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.41485  ] 
+
+2015-08-04 06:17:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 387.1385 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.47377  ] 
+
+2015-08-04 06:17:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 398.41473 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.47664  ] 
+
+2015-08-04 06:17:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 410.524 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.48088  ] 
+
+2015-08-04 06:17:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 430.12827 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.494377  ] 
+
+2015-08-04 06:18:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 436.20255 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.50447  ] 
+
+2015-08-04 06:18:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 441.44403 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.51053  ] 
+
+2015-08-04 06:18:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 453.08612 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.572975  ] 
+
+2015-08-04 06:18:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 467.9253 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.61174  ] 
+
+2015-08-04 06:18:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 486.32886 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.613632  ] 
+
+2015-08-04 06:18:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 486.3626 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.616425  ] 
+
+2015-08-04 06:19:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 493.14783 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.618317  ] 
+
+2015-08-04 06:19:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 496.35123 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.63468  ] 
+
+2015-08-04 06:19:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 509.9549 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.64788  ] 
+
+2015-08-04 06:19:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 537.0642 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.653572  ] 
+
+2015-08-04 06:19:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 537.9607 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.66297  ] 
+
+2015-08-04 06:19:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 452.768 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.65271  ] 
+
+2015-08-04 06:20:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 462.92218 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.660645  ] 
+
+2015-08-04 06:20:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 472.5752 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.66992  ] 
+
+2015-08-04 06:20:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 492.60406 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.671875  ] 
+
+2015-08-04 06:20:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 498.31796 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.687485  ] 
+
+2015-08-04 06:20:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 497.0213 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.705254  ] 
+
+2015-08-04 06:20:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 513.7329 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.71528  ] 
+
+2015-08-04 06:21:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 514.3065 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.80574  ] 
+
+2015-08-04 06:21:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 536.4535 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.824097  ] 
+
+2015-08-04 06:21:21 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 539.2049 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.859222  ] 
+
+2015-08-04 06:21:31 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 545.7999 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.877205  ] 
+
+2015-08-04 06:21:41 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 557.8496 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.90638  ] 
+
+2015-08-04 06:21:51 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 561.32434 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.953087  ] 
+
+2015-08-04 06:22:01 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 551.38245 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.96093  ] 
+
+2015-08-04 06:22:11 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 559.9566 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.979286  ] 
+
+2015-08-04 06:31:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 12.585289 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 27.600418  ] 
+
+2015-08-04 06:31:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 22.624146 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.23957  ] 
+
+2015-08-04 06:31:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 69.96696 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.891937  ] 
+
+2015-08-04 06:31:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 107.67937 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.38154  ] 
+
+2015-08-04 06:31:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 57.82982 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.556496  ] 
+
+2015-08-04 06:32:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 172.34784 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.749046  ] 
+
+2015-08-04 06:32:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 153.70602 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.174408  ] 
+
+2015-08-04 06:32:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 165.26892 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.260635  ] 
+
+2015-08-04 06:32:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 161.46243 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.461563  ] 
+
+2015-08-04 06:32:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 158.79527 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.64653  ] 
+
+2015-08-04 06:32:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 163.15088 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.716675  ] 
+
+2015-08-04 06:33:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 199.16039 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.847145  ] 
+
+2015-08-04 06:33:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 218.02863 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.995316  ] 
+
+2015-08-04 06:33:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 146.09552 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.089256  ] 
+
+2015-08-04 06:33:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 200.40616 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.219894  ] 
+
+2015-08-04 06:33:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 234.15863 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.319862  ] 
+
+2015-08-04 06:33:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 198.29056 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.463173  ] 
+
+2015-08-04 06:34:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 199.39366 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.55062  ] 
+
+2015-08-04 06:34:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 189.39073 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.62744  ] 
+
+2015-08-04 06:34:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 245.65068 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.693413  ] 
+
+2015-08-04 06:34:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 252.80511 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.717903  ] 
+
+2015-08-04 06:34:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 247.56638 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.736946  ] 
+
+2015-08-04 06:34:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 235.66412 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.78926  ] 
+
+2015-08-04 06:35:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 239.99509 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.830276  ] 
+
+2015-08-04 06:35:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 253.97572 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.842316  ] 
+
+2015-08-04 06:35:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 263.79767 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.844185  ] 
+
+2015-08-04 06:35:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 268.3647 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.854744  ] 
+
+2015-08-04 06:35:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 294.6692 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.859154  ] 
+
+2015-08-04 06:35:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 300.25592 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.861534  ] 
+
+2015-08-04 06:36:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 296.33978 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.866356  ] 
+
+2015-08-04 06:36:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 326.29062 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.874153  ] 
+
+2015-08-04 06:36:22 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 324.43094 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.897957  ] 
+
+2015-08-04 06:36:32 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 341.3731 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.93724  ] 
+
+2015-08-04 06:36:42 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 345.65045 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.948105  ] 
+
+2015-08-04 06:36:52 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 365.02676 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.992905  ] 
+
+2015-08-04 06:37:02 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 370.49072 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.001625  ] 
+
+2015-08-04 06:37:12 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 387.37912 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.023956  ] 
+
+2015-08-04 06:37:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 379.26984 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.065613  ] 
+
+2015-08-04 06:37:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 401.5267 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.074524  ] 
+
+2015-08-04 06:37:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 415.7291 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.074524  ] 
+
+2015-08-04 06:37:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 415.32767 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.090218  ] 
+
+2015-08-04 06:38:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 432.31763 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.10019  ] 
+
+2015-08-04 06:38:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 438.52036 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.13717  ] 
+
+2015-08-04 06:38:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 441.57642 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.181267  ] 
+
+2015-08-04 06:38:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 460.28186 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.220245  ] 
+
+2015-08-04 06:38:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 494.50366 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.220245  ] 
+
+2015-08-04 06:38:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 485.00403 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.221878  ] 
+
+2015-08-04 06:39:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 487.3675 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.225494  ] 
+
+2015-08-04 06:39:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 498.00793 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.249786  ] 
+
+2015-08-04 06:39:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 504.66428 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.25347  ] 
+
+2015-08-04 06:39:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 507.22565 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.257744  ] 
+
+2015-08-04 06:39:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 525.0813 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.265556  ] 
+
+2015-08-04 06:39:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 557.692 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.267754  ] 
+
+2015-08-04 06:40:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 461.8286 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.27404  ] 
+
+2015-08-04 06:40:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 461.19568 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.25258  ] 
+
+2015-08-04 06:40:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 481.8889 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.25258  ] 
+
+2015-08-04 06:40:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 506.98755 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.266197  ] 
+
+2015-08-04 06:40:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 497.768 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.284317  ] 
+
+2015-08-04 06:40:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 522.3683 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.295937  ] 
+
+2015-08-04 06:41:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 522.1633 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.386337  ] 
+
+2015-08-04 06:41:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 522.51227 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.402252  ] 
+
+2015-08-04 06:41:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 538.37555 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.407135  ] 
+
+2015-08-04 06:41:33 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 542.75696 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.41755  ] 
+
+2015-08-04 06:41:43 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 553.7989 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.418465  ] 
+
+2015-08-04 06:41:53 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 560.23303 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.46988  ] 
+
+2015-08-04 06:42:03 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 554.2172 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.477173  ] 
+
+2015-08-04 06:42:13 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 578.8693 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.494118  ] 
+
+2015-08-04 06:42:23 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 559.0999 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 39.521248  ] 
+
+2015-08-04 06:46:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 12.568771 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 27.588318  ] 
+
+2015-08-04 06:47:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 21.74926 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.226135  ] 
+
+2015-08-04 06:47:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 66.893234 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 35.771225  ] 
+
+2015-08-04 06:47:24 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 104.303925 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.44342  ] 
+
+2015-08-04 06:47:34 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 125.12513 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.477318  ] 
+
+2015-08-04 06:47:44 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 79.04416 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 36.61257  ] 
+
+2015-08-04 06:47:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 110.81635 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.041924  ] 
+
+2015-08-04 06:48:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 145.79019 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.1529  ] 
+
+2015-08-04 06:48:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 137.48679 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.34378  ] 
+
+2015-08-04 06:48:24 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 117.63847 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.491188  ] 
+
+2015-08-04 06:48:34 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 109.47649 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.548286  ] 
+
+2015-08-04 06:48:44 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 116.99346 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.757736  ] 
+
+2015-08-04 06:48:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 149.28166 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.9466  ] 
+
+2015-08-04 06:49:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 171.9887 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 37.97503  ] 
+
+2015-08-04 06:49:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 162.46321 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.0972  ] 
+
+2015-08-04 06:49:24 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 159.8178 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.13997  ] 
+
+2015-08-04 06:49:34 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 184.28204 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.260155  ] 
+
+2015-08-04 06:49:44 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 193.81903 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.316765  ] 
+
+2015-08-04 06:49:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 205.05371 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.40226  ] 
+
+2015-08-04 06:50:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 200.75488 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.448242  ] 
+
+2015-08-04 06:50:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 220.9715 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.4664  ] 
+
+2015-08-04 06:50:24 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 222.04555 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.486046  ] 
+
+2015-08-04 06:50:34 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 246.06506 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.52427  ] 
+
+2015-08-04 06:50:44 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 252.61118 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.556366  ] 
+
+2015-08-04 06:50:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 271.5509 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.571945  ] 
+
+2015-08-04 06:51:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 276.63098 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.57628  ] 
+
+2015-08-04 06:51:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 280.91354 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.5869  ] 
+
+2015-08-04 06:51:24 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 278.84473 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.59021  ] 
+
+2015-08-04 06:51:34 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 290.53064 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.592445  ] 
+
+2015-08-04 06:51:44 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 298.83694 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.606117  ] 
+
+2015-08-04 06:51:54 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 312.1419 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.617065  ] 
+
+2015-08-04 06:52:04 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 333.84818 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.64647  ] 
+
+2015-08-04 06:52:14 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 358.25854 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.685814  ] 
+
+2015-08-04 06:52:25 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 358.1859 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.703552  ] 
+
+2015-08-04 06:52:35 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 363.14825 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.745537  ] 
+
+2015-08-04 06:52:45 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 372.5193 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.75505  ] 
+
+2015-08-04 06:52:55 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 378.5468 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.773293  ] 
+
+2015-08-04 06:53:05 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 400.81256 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.81977  ] 
+
+2015-08-04 06:53:15 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 401.06995 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.82264  ] 
+
+2015-08-04 06:53:25 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 427.60004 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.827034  ] 
+
+2015-08-04 06:53:35 SnapshotReporterProfiler [INFO] 
+messages for container: samza-container-0 with num messages: 1 are =[mem-non-heap-max-mb: -9.536743E-7 , mem-heap-used-mb: 439.9797 , mem-heap-max-mb: 711.5 , mem-non-heap-used-mb: 38.8412  ] 
+
+2015-08-04 06:55:09 AutoScalingSystem [INFO] Shutting down, will wait up to 10000 ms
+2015-08-04 06:55:19 AutoScalingSystem [INFO] stopping auto-scaling
+2015-08-04 06:55:19 CoordinatorStreamSystemConsumer [INFO] Stopping coordinator stream system consumer.
+2015-08-04 06:55:19 BrokerProxy [INFO] Shutting down BrokerProxy for lca1-app0887.corp.linkedin.com:10251
+2015-08-04 06:55:19 DefaultFetchSimpleConsumer [INFO] Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+2015-08-04 06:55:19 BrokerProxy [WARN] Restarting consumer due to java.nio.channels.ClosedChannelException. Releasing ownership of all partitions, and restarting consumer. Turn on debugging to get a full stack trace.
+2015-08-04 06:55:19 KafkaSystemConsumer [INFO] Abdicating for [__samza_coordinator_shadi-mem-test-8_1,0]
+2015-08-04 06:55:19 KafkaSystemConsumer [INFO] Refreshing brokers for: Map([__samza_coordinator_shadi-mem-test-8_1,0] -> 1275)
+2015-08-04 06:55:19 BrokerProxy [INFO] Shutting down due to interrupt.
+2015-08-04 06:55:20 CoordinatorStreamWriter [INFO] Stopping the coordinator stream producer.
+2015-08-04 06:55:20 CoordinatorStreamSystemProducer [INFO] Stopping coordinator stream producer.
+2015-08-04 06:55:20 AutoScalingSystem [INFO] stopping stat collector
+2015-08-04 06:55:20 AutoScalingSystem [WARN] Did not shut down within 10000 ms, exiting

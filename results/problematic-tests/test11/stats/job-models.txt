@@ -1,0 +1,25 @@
+new job model submitted at date: Tue Aug 04 17:12:27 UTC 2015 , in millis: 1438708347575
+samza-container-0: [ ( Partition 6 , 0.1 ) , ( Partition 16 , 0.1 ) , ( Partition 15 , 0.1 ) , ( Partition 1 , 0.1 ) , ( Partition 14 , 0.1 ) , ( Partition 2 , 0.1 ) , ( Partition 18 , 0.1 ) , ( Partition 17 , 0.1 ) , ( Partition 4 , 0.1 ) , ( Partition 11 , 0.1 ) ]
+samza-container-1: [ ( Partition 0 , 0.1 ) , ( Partition 13 , 0.1 ) , ( Partition 3 , 0.1 ) , ( Partition 19 , 0.1 ) , ( Partition 5 , 0.1 ) , ( Partition 7 , 0.1 ) , ( Partition 9 , 0.1 ) , ( Partition 8 , 0.1 ) , ( Partition 12 , 0.1 ) , ( Partition 10 , 0.1 ) ]
+
+
+new job model submitted at date: Tue Aug 04 17:40:46 UTC 2015 , in millis: 1438710046647
+samza-container-3: [ ( Partition 16 , 0.2 ) , ( Partition 1 , 0.2 ) , ( Partition 0 , 0.2 ) , ( Partition 3 , 0.2 ) , ( Partition 19 , 0.2 ) ]
+samza-container-0: [ ( Partition 15 , 0.2 ) , ( Partition 14 , 0.2 ) , ( Partition 2 , 0.2 ) , ( Partition 18 , 0.2 ) , ( Partition 6 , 0.2 ) ]
+samza-container-2: [ ( Partition 4 , 0.2 ) , ( Partition 17 , 0.2 ) , ( Partition 8 , 0.2 ) , ( Partition 12 , 0.2 ) , ( Partition 11 , 0.2 ) ]
+samza-container-1: [ ( Partition 13 , 0.2 ) , ( Partition 5 , 0.2 ) , ( Partition 7 , 0.2 ) , ( Partition 9 , 0.2 ) , ( Partition 10 , 0.2 ) ]
+
+
+new job model submitted at date: Tue Aug 04 18:34:37 UTC 2015 , in millis: 1438713277508
+samza-container-4: [ ( Partition 6 , 0.4 ) , ( Partition 11 , 0.4 ) ]
+samza-container-3: [ ( Partition 0 , 0.4 ) , ( Partition 19 , 0.4 ) ]
+samza-container-6: [ ( Partition 5 , 0.4 ) , ( Partition 4 , 0.4 ) ]
+samza-container-5: [ ( Partition 17 , 0.4 ) , ( Partition 7 , 0.4 ) ]
+samza-container-8: [ ( Partition 14 , 0.4 ) , ( Partition 13 , 0.4 ) ]
+samza-container-7: [ ( Partition 3 , 0.4 ) , ( Partition 2 , 0.4 ) ]
+samza-container-9: [ ( Partition 16 , 0.4 ) , ( Partition 1 , 0.4 ) ]
+samza-container-0: [ ( Partition 15 , 0.4 ) , ( Partition 18 , 0.4 ) ]
+samza-container-2: [ ( Partition 8 , 0.4 ) , ( Partition 12 , 0.4 ) ]
+samza-container-1: [ ( Partition 9 , 0.4 ) , ( Partition 10 , 0.4 ) ]
+
+

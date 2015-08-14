@@ -1,0 +1,7 @@
+new job model submitted at date: Thu Aug 06 20:41:39 UTC 2015 , in millis: 1438893699613
+samza-container-3: [ ( Partition 7 , 0.16666666666666666 ) , ( Partition 8 , 0.16666666666666666 ) ]
+samza-container-0: [ ( Partition 6 , 0.16666666666666666 ) , ( Partition 9 , 0.16666666666666666 ) , ( Partition 14 , 0.16666666666666666 ) , ( Partition 13 , 0.16666666666666666 ) , ( Partition 3 , 0.16666666666666666 ) , ( Partition 10 , 0.16666666666666666 ) ]
+samza-container-2: [ ( Partition 16 , 0.16666666666666666 ) , ( Partition 15 , 0.16666666666666666 ) , ( Partition 1 , 0.16666666666666666 ) , ( Partition 0 , 0.16666666666666666 ) , ( Partition 19 , 0.16666666666666666 ) , ( Partition 2 , 0.16666666666666666 ) ]
+samza-container-1: [ ( Partition 18 , 0.16666666666666666 ) , ( Partition 5 , 0.16666666666666666 ) , ( Partition 17 , 0.16666666666666666 ) , ( Partition 4 , 0.16666666666666666 ) , ( Partition 12 , 0.16666666666666666 ) , ( Partition 11 , 0.16666666666666666 ) ]
+
+

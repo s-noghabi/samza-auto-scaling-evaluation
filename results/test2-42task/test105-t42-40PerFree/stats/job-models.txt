@@ -1,0 +1,69 @@
+new job model submitted at date: Sun Aug 09 18:47:42 UTC 2015 , in millis: 1439146062161
+samza-container-0: [ ( Partition 6 , 0.03968253968253968 ) , ( Partition 9 , 0.03968253968253968 ) , ( Partition 26 , 0.03968253968253968 ) , ( Partition 24 , 0.03968253968253968 ) , ( Partition 41 , 0.03968253968253968 ) , ( Partition 40 , 0.03968253968253968 ) , ( Partition 23 , 0.03968253968253968 ) , ( Partition 21 , 0.03968253968253968 ) , ( Partition 16 , 0.03968253968253968 ) , ( Partition 38 , 0.03968253968253968 ) , ( Partition 37 , 0.03968253968253968 ) , ( Partition 1 , 0.03968253968253968 ) , ( Partition 0 , 0.03968253968253968 ) , ( Partition 13 , 0.03968253968253968 ) , ( Partition 3 , 0.03968253968253968 ) , ( Partition 19 , 0.03968253968253968 ) , ( Partition 17 , 0.03968253968253968 ) , ( Partition 39 , 0.03968253968253968 ) , ( Partition 4 , 0.03968253968253968 ) , ( Partition 30 , 0.03968253968253968 ) , ( Partition 12 , 0.03968253968253968 ) , ( Partition 34 , 0.03968253968253968 ) , ( Partition 33 , 0.03968253968253968 ) , ( Partition 10 , 0.03968253968253968 ) , ( Partition 32 , 0.03968253968253968 ) ]
+samza-container-1: [ ( Partition 7 , 0.03968253968253968 ) , ( Partition 8 , 0.03968253968253968 ) , ( Partition 27 , 0.03968253968253968 ) , ( Partition 15 , 0.03968253968253968 ) , ( Partition 14 , 0.03968253968253968 ) , ( Partition 36 , 0.03968253968253968 ) , ( Partition 25 , 0.03968253968253968 ) , ( Partition 35 , 0.03968253968253968 ) , ( Partition 2 , 0.03968253968253968 ) , ( Partition 5 , 0.03968253968253968 ) , ( Partition 29 , 0.03968253968253968 ) , ( Partition 18 , 0.03968253968253968 ) , ( Partition 28 , 0.03968253968253968 ) , ( Partition 11 , 0.03968253968253968 ) , ( Partition 22 , 0.03968253968253968 ) , ( Partition 31 , 0.03968253968253968 ) , ( Partition 20 , 0.03968253968253968 ) ]
+
+
+new job model submitted at date: Sun Aug 09 19:08:31 UTC 2015 , in millis: 1439147311528
+samza-container-0: [ ( Partition 9 , 0.06666666666666667 ) , ( Partition 24 , 0.06666666666666667 ) , ( Partition 40 , 0.06666666666666667 ) , ( Partition 21 , 0.06666666666666667 ) , ( Partition 16 , 0.06666666666666667 ) , ( Partition 38 , 0.06666666666666667 ) , ( Partition 0 , 0.06666666666666667 ) , ( Partition 13 , 0.06666666666666667 ) , ( Partition 3 , 0.06666666666666667 ) , ( Partition 19 , 0.06666666666666667 ) , ( Partition 39 , 0.06666666666666667 ) , ( Partition 30 , 0.06666666666666667 ) , ( Partition 12 , 0.06666666666666667 ) , ( Partition 33 , 0.06666666666666667 ) , ( Partition 32 , 0.06666666666666667 ) ]
+samza-container-2: [ ( Partition 37 , 0.06666666666666667 ) , ( Partition 26 , 0.06666666666666667 ) , ( Partition 1 , 0.06666666666666667 ) , ( Partition 17 , 0.06666666666666667 ) , ( Partition 4 , 0.06666666666666667 ) , ( Partition 41 , 0.06666666666666667 ) , ( Partition 6 , 0.06666666666666667 ) , ( Partition 34 , 0.06666666666666667 ) , ( Partition 23 , 0.06666666666666667 ) , ( Partition 10 , 0.06666666666666667 ) ]
+samza-container-1: [ ( Partition 7 , 0.058823529411764705 ) , ( Partition 8 , 0.058823529411764705 ) , ( Partition 27 , 0.058823529411764705 ) , ( Partition 15 , 0.058823529411764705 ) , ( Partition 14 , 0.058823529411764705 ) , ( Partition 36 , 0.058823529411764705 ) , ( Partition 25 , 0.058823529411764705 ) , ( Partition 35 , 0.058823529411764705 ) , ( Partition 2 , 0.058823529411764705 ) , ( Partition 5 , 0.058823529411764705 ) , ( Partition 29 , 0.058823529411764705 ) , ( Partition 18 , 0.058823529411764705 ) , ( Partition 28 , 0.058823529411764705 ) , ( Partition 11 , 0.058823529411764705 ) , ( Partition 22 , 0.058823529411764705 ) , ( Partition 31 , 0.058823529411764705 ) , ( Partition 20 , 0.058823529411764705 ) ]
+
+
+new job model submitted at date: Sun Aug 09 19:42:37 UTC 2015 , in millis: 1439149357934
+samza-container-3: [ ( Partition 24 , 0.11111111111111112 ) , ( Partition 3 , 0.11111111111111112 ) , ( Partition 30 , 0.11111111111111112 ) , ( Partition 40 , 0.11111111111111112 ) , ( Partition 9 , 0.11111111111111112 ) , ( Partition 32 , 0.11111111111111112 ) ]
+samza-container-0: [ ( Partition 16 , 0.11111111111111112 ) , ( Partition 38 , 0.11111111111111112 ) , ( Partition 0 , 0.11111111111111112 ) , ( Partition 13 , 0.11111111111111112 ) , ( Partition 19 , 0.11111111111111112 ) , ( Partition 39 , 0.11111111111111112 ) , ( Partition 12 , 0.11111111111111112 ) , ( Partition 33 , 0.11111111111111112 ) , ( Partition 21 , 0.11111111111111112 ) ]
+samza-container-2: [ ( Partition 37 , 0.1 ) , ( Partition 26 , 0.1 ) , ( Partition 1 , 0.1 ) , ( Partition 17 , 0.1 ) , ( Partition 4 , 0.1 ) , ( Partition 41 , 0.1 ) , ( Partition 6 , 0.1 ) , ( Partition 34 , 0.1 ) , ( Partition 23 , 0.1 ) , ( Partition 10 , 0.1 ) ]
+samza-container-1: [ ( Partition 7 , 0.058823529411764705 ) , ( Partition 8 , 0.058823529411764705 ) , ( Partition 27 , 0.058823529411764705 ) , ( Partition 15 , 0.058823529411764705 ) , ( Partition 14 , 0.058823529411764705 ) , ( Partition 36 , 0.058823529411764705 ) , ( Partition 25 , 0.058823529411764705 ) , ( Partition 35 , 0.058823529411764705 ) , ( Partition 2 , 0.058823529411764705 ) , ( Partition 5 , 0.058823529411764705 ) , ( Partition 29 , 0.058823529411764705 ) , ( Partition 18 , 0.058823529411764705 ) , ( Partition 28 , 0.058823529411764705 ) , ( Partition 11 , 0.058823529411764705 ) , ( Partition 22 , 0.058823529411764705 ) , ( Partition 31 , 0.058823529411764705 ) , ( Partition 20 , 0.058823529411764705 ) ]
+
+
+new job model submitted at date: Sun Aug 09 20:12:17 UTC 2015 , in millis: 1439151137946
+samza-container-4: [ ( Partition 27 , 0.09803921568627451 ) , ( Partition 2 , 0.09803921568627451 ) , ( Partition 18 , 0.09803921568627451 ) , ( Partition 7 , 0.09803921568627451 ) , ( Partition 8 , 0.09803921568627451 ) , ( Partition 20 , 0.09803921568627451 ) , ( Partition 31 , 0.09803921568627451 ) ]
+samza-container-3: [ ( Partition 24 , 0.16666666666666666 ) , ( Partition 3 , 0.16666666666666666 ) , ( Partition 30 , 0.16666666666666666 ) , ( Partition 40 , 0.16666666666666666 ) , ( Partition 9 , 0.16666666666666666 ) , ( Partition 32 , 0.16666666666666666 ) ]
+samza-container-0: [ ( Partition 16 , 0.1111111111111111 ) , ( Partition 38 , 0.1111111111111111 ) , ( Partition 0 , 0.1111111111111111 ) , ( Partition 13 , 0.1111111111111111 ) , ( Partition 19 , 0.1111111111111111 ) , ( Partition 39 , 0.1111111111111111 ) , ( Partition 12 , 0.1111111111111111 ) , ( Partition 33 , 0.1111111111111111 ) , ( Partition 21 , 0.1111111111111111 ) ]
+samza-container-2: [ ( Partition 37 , 0.1 ) , ( Partition 26 , 0.1 ) , ( Partition 1 , 0.1 ) , ( Partition 17 , 0.1 ) , ( Partition 4 , 0.1 ) , ( Partition 41 , 0.1 ) , ( Partition 6 , 0.1 ) , ( Partition 34 , 0.1 ) , ( Partition 23 , 0.1 ) , ( Partition 10 , 0.1 ) ]
+samza-container-1: [ ( Partition 15 , 0.09803921568627451 ) , ( Partition 14 , 0.09803921568627451 ) , ( Partition 36 , 0.09803921568627451 ) , ( Partition 25 , 0.09803921568627451 ) , ( Partition 35 , 0.09803921568627451 ) , ( Partition 5 , 0.09803921568627451 ) , ( Partition 29 , 0.09803921568627451 ) , ( Partition 28 , 0.09803921568627451 ) , ( Partition 11 , 0.09803921568627451 ) , ( Partition 22 , 0.09803921568627451 ) ]
+
+
+new job model submitted at date: Sun Aug 09 21:00:21 UTC 2015 , in millis: 1439154021207
+samza-container-4: [ ( Partition 27 , 0.14285714285714285 ) , ( Partition 2 , 0.14285714285714285 ) , ( Partition 18 , 0.14285714285714285 ) , ( Partition 7 , 0.14285714285714285 ) , ( Partition 8 , 0.14285714285714285 ) , ( Partition 20 , 0.14285714285714285 ) , ( Partition 31 , 0.14285714285714285 ) ]
+samza-container-3: [ ( Partition 24 , 0.16666666666666666 ) , ( Partition 3 , 0.16666666666666666 ) , ( Partition 30 , 0.16666666666666666 ) , ( Partition 40 , 0.16666666666666666 ) , ( Partition 9 , 0.16666666666666666 ) , ( Partition 32 , 0.16666666666666666 ) ]
+samza-container-6: [ ( Partition 37 , 0.16666666666666669 ) , ( Partition 14 , 0.16666666666666669 ) , ( Partition 35 , 0.16666666666666669 ) , ( Partition 5 , 0.16666666666666669 ) , ( Partition 41 , 0.16666666666666669 ) , ( Partition 23 , 0.16666666666666669 ) ]
+samza-container-5: [ ( Partition 38 , 0.18518518518518517 ) , ( Partition 16 , 0.18518518518518517 ) , ( Partition 0 , 0.18518518518518517 ) , ( Partition 33 , 0.18518518518518517 ) , ( Partition 22 , 0.16666666666666669 ) ]
+samza-container-7: [ ( Partition 26 , 0.16666666666666669 ) ]
+samza-container-0: [ ( Partition 13 , 0.18518518518518517 ) , ( Partition 19 , 0.18518518518518517 ) , ( Partition 39 , 0.18518518518518517 ) , ( Partition 12 , 0.18518518518518517 ) , ( Partition 21 , 0.18518518518518517 ) ]
+samza-container-2: [ ( Partition 1 , 0.16666666666666669 ) , ( Partition 17 , 0.16666666666666669 ) , ( Partition 4 , 0.16666666666666669 ) , ( Partition 6 , 0.16666666666666669 ) , ( Partition 34 , 0.16666666666666669 ) , ( Partition 10 , 0.16666666666666669 ) ]
+samza-container-1: [ ( Partition 15 , 0.16666666666666669 ) , ( Partition 36 , 0.16666666666666669 ) , ( Partition 25 , 0.16666666666666669 ) , ( Partition 29 , 0.16666666666666669 ) , ( Partition 28 , 0.16666666666666669 ) , ( Partition 11 , 0.16666666666666669 ) ]
+
+
+new job model submitted at date: Sun Aug 09 22:24:09 UTC 2015 , in millis: 1439159049153
+samza-container-4: [ ( Partition 27 , 0.23809523809523808 ) , ( Partition 18 , 0.23809523809523808 ) , ( Partition 20 , 0.23809523809523808 ) , ( Partition 31 , 0.23809523809523808 ) ]
+samza-container-3: [ ( Partition 24 , 0.16666666666666666 ) , ( Partition 3 , 0.16666666666666666 ) , ( Partition 30 , 0.16666666666666666 ) , ( Partition 40 , 0.16666666666666666 ) , ( Partition 9 , 0.16666666666666666 ) , ( Partition 32 , 0.16666666666666666 ) ]
+samza-container-6: [ ( Partition 35 , 0.2777777777777778 ) , ( Partition 5 , 0.2777777777777778 ) , ( Partition 41 , 0.2777777777777778 ) ]
+samza-container-5: [ ( Partition 38 , 0.2 ) , ( Partition 16 , 0.2 ) , ( Partition 0 , 0.2 ) , ( Partition 33 , 0.2 ) , ( Partition 22 , 0.2 ) ]
+samza-container-8: [ ( Partition 29 , 0.2777777777777778 ) , ( Partition 23 , 0.2777777777777778 ) , ( Partition 11 , 0.2777777777777778 ) ]
+samza-container-7: [ ( Partition 26 , 1.0 ) ]
+samza-container-9: [ ( Partition 15 , 0.2777777777777778 ) , ( Partition 37 , 0.2777777777777778 ) , ( Partition 14 , 0.2777777777777778 ) ]
+samza-container-10: [ ( Partition 2 , 0.23809523809523808 ) , ( Partition 7 , 0.23809523809523808 ) , ( Partition 8 , 0.23809523809523808 ) ]
+samza-container-0: [ ( Partition 13 , 0.2 ) , ( Partition 19 , 0.2 ) , ( Partition 39 , 0.2 ) , ( Partition 12 , 0.2 ) , ( Partition 21 , 0.2 ) ]
+samza-container-2: [ ( Partition 1 , 0.16666666666666666 ) , ( Partition 17 , 0.16666666666666666 ) , ( Partition 4 , 0.16666666666666666 ) , ( Partition 6 , 0.16666666666666666 ) , ( Partition 34 , 0.16666666666666666 ) , ( Partition 10 , 0.16666666666666666 ) ]
+samza-container-1: [ ( Partition 36 , 0.2777777777777778 ) , ( Partition 25 , 0.2777777777777778 ) , ( Partition 28 , 0.2777777777777778 ) ]
+
+
+new job model submitted at date: Sun Aug 09 23:59:47 UTC 2015 , in millis: 1439164787222
+samza-container-0: [ ( Partition 13 , 0.33333333333333337 ) , ( Partition 39 , 0.33333333333333337 ) , ( Partition 21 , 0.33333333333333337 ) ]
+samza-container-2: [ ( Partition 17 , 0.2777777777777778 ) , ( Partition 4 , 0.2777777777777778 ) , ( Partition 10 , 0.2777777777777778 ) ]
+samza-container-1: [ ( Partition 36 , 0.3333333333333333 ) , ( Partition 25 , 0.3333333333333333 ) , ( Partition 28 , 0.3333333333333333 ) ]
+samza-container-4: [ ( Partition 27 , 0.25 ) , ( Partition 18 , 0.25 ) , ( Partition 20 , 0.25 ) , ( Partition 31 , 0.25 ) ]
+samza-container-3: [ ( Partition 40 , 0.2777777777777778 ) , ( Partition 9 , 0.2777777777777778 ) , ( Partition 32 , 0.2777777777777778 ) ]
+samza-container-6: [ ( Partition 35 , 0.3333333333333333 ) , ( Partition 5 , 0.3333333333333333 ) , ( Partition 41 , 0.3333333333333333 ) ]
+samza-container-5: [ ( Partition 38 , 0.33333333333333337 ) , ( Partition 16 , 0.33333333333333337 ) , ( Partition 22 , 0.33333333333333337 ) ]
+samza-container-8: [ ( Partition 29 , 0.3333333333333333 ) , ( Partition 23 , 0.3333333333333333 ) , ( Partition 11 , 0.3333333333333333 ) ]
+samza-container-7: [ ( Partition 26 , 1.0 ) ]
+samza-container-9: [ ( Partition 15 , 0.3333333333333333 ) , ( Partition 37 , 0.3333333333333333 ) , ( Partition 14 , 0.3333333333333333 ) ]
+samza-container-11: [ ( Partition 19 , 0.33333333333333337 ) , ( Partition 12 , 0.33333333333333337 ) , ( Partition 33 , 0.33333333333333337 ) ]
+samza-container-10: [ ( Partition 2 , 0.3333333333333333 ) , ( Partition 7 , 0.3333333333333333 ) , ( Partition 8 , 0.3333333333333333 ) ]
+samza-container-13: [ ( Partition 24 , 0.2777777777777778 ) , ( Partition 3 , 0.2777777777777778 ) , ( Partition 30 , 0.2777777777777778 ) ]
+samza-container-12: [ ( Partition 0 , 0.33333333333333337 ) , ( Partition 6 , 0.2777777777777778 ) , ( Partition 34 , 0.2777777777777778 ) ]
+samza-container-14: [ ( Partition 1 , 0.2777777777777778 ) ]
+
+
