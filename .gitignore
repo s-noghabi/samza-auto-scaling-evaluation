@@ -28,3 +28,4 @@ target/
 */.cache
 deploy
 *.swp
+.DS_Store
